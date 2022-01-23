@@ -53,16 +53,7 @@ public class Sorting {
             System.out.println("Ошибочные параметры");
         }
 
-//        System.out.println();
-//        System.out.println("Сортировка: " + sort);
-//        System.out.println("Тип данных: " + type);
-//        System.out.println("Итоговый файл: " + nameOut);
-//        System.out.print("Исходные файлы: ");
-//        for (String a : namesIn) {
-//            System.out.print(a + " ");
-//        }
-
-// чтение файлов
+        // чтение файлов
         if (type.equals("-i")) {
             FileSort.readFile(namesIn, type, mergerInt1, mergerInt2, numberOfFiles);
         }
@@ -92,15 +83,6 @@ public class Sorting {
                 FileSort.sortStrDes(mergerString1, mergerString2, mergerStringSort);
             }
 
-//            System.out.println();
-//            System.out.println("mergerString1 " + mergerString1);
-//            System.out.println("mergerString2 " + mergerString2);
-//            System.out.println("mergerStringSort" + mergerStringSort);
-//            System.out.println("mergerInt1 " + mergerInt1);
-//            System.out.println("mergerInt2 " + mergerInt2);
-//            System.out.println("mergerIntSort " + mergerIntSort);
-//
-
             mergerInt1 = new ArrayList<>();
             mergerInt1.addAll(mergerIntSort);
             mergerInt2.clear();
@@ -110,13 +92,6 @@ public class Sorting {
             mergerString1.addAll(mergerStringSort);
             mergerString2.clear();
             mergerStringSort.clear();
-
-//            System.out.println("mergerInt1 " + mergerInt1);
-//            System.out.println("mergerInt2 " + mergerInt2);
-//            System.out.println("mergerIntSort " + mergerIntSort);
-//            System.out.println("mergerString1 " + mergerString1);
-//            System.out.println("mergerString2 " + mergerString2);
-//            System.out.println("mergerStringSort " + mergerStringSort);
         }
 
             // Запись в файл
